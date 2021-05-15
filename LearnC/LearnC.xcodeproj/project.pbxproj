@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FD13A402265004F200799443 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FD13A401265004F200799443 /* main.c */; };
+		FD13A40B26501DFA00799443 /* GambleGame.c in Sources */ = {isa = PBXBuildFile; fileRef = FD13A40A26501DFA00799443 /* GambleGame.c */; };
+		FD13A40E2650217200799443 /* DynamicMemory.c in Sources */ = {isa = PBXBuildFile; fileRef = FD13A40D2650217200799443 /* DynamicMemory.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		FD13A3FE265004F200799443 /* LearnC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnC; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD13A401265004F200799443 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FD13A40A26501DFA00799443 /* GambleGame.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GambleGame.c; sourceTree = "<group>"; };
+		FD13A40D2650217200799443 /* DynamicMemory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DynamicMemory.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				FD13A401265004F200799443 /* main.c */,
+				FD13A40D2650217200799443 /* DynamicMemory.c */,
+				FD13A40A26501DFA00799443 /* GambleGame.c */,
 			);
 			path = LearnC;
 			sourceTree = "<group>";
@@ -119,6 +125,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD13A402265004F200799443 /* main.c in Sources */,
+				FD13A40E2650217200799443 /* DynamicMemory.c in Sources */,
+				FD13A40B26501DFA00799443 /* GambleGame.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
