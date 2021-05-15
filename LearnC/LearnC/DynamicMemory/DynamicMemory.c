@@ -5,8 +5,7 @@
 //  Created by Amit Jangirh on 15/05/21.
 //
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "DynamicMemory.h"
 
 /*
 Created to understand Malloc and calloc initialing

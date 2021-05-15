@@ -5,9 +5,7 @@
 //  Created by Amit Jangirh on 15/05/21.
 //
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "GambleGame.h"
 
 int cash = 1000; // Global mem
 
@@ -36,6 +34,7 @@ void play(int bet) {
     }
 }
 
+// Main func
 void startGame() {
     int bet;
     printf("Welocome to Gamble game");

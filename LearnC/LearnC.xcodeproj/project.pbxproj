@@ -29,6 +29,8 @@
 		FD13A401265004F200799443 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FD13A40A26501DFA00799443 /* GambleGame.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GambleGame.c; sourceTree = "<group>"; };
 		FD13A40D2650217200799443 /* DynamicMemory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DynamicMemory.c; sourceTree = "<group>"; };
+		FD13A412265025C300799443 /* GambleGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GambleGame.h; sourceTree = "<group>"; };
+		FD13A4142650262C00799443 /* DynamicMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicMemory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +64,28 @@
 			isa = PBXGroup;
 			children = (
 				FD13A401265004F200799443 /* main.c */,
-				FD13A40D2650217200799443 /* DynamicMemory.c */,
-				FD13A40A26501DFA00799443 /* GambleGame.c */,
+				FD13A4162650266A00799443 /* DynamicMemory */,
+				FD13A4182650267A00799443 /* GambleGame */,
 			);
 			path = LearnC;
+			sourceTree = "<group>";
+		};
+		FD13A4162650266A00799443 /* DynamicMemory */ = {
+			isa = PBXGroup;
+			children = (
+				FD13A4142650262C00799443 /* DynamicMemory.h */,
+				FD13A40D2650217200799443 /* DynamicMemory.c */,
+			);
+			path = DynamicMemory;
+			sourceTree = "<group>";
+		};
+		FD13A4182650267A00799443 /* GambleGame */ = {
+			isa = PBXGroup;
+			children = (
+				FD13A40A26501DFA00799443 /* GambleGame.c */,
+				FD13A412265025C300799443 /* GambleGame.h */,
+			);
+			path = GambleGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

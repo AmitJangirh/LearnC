@@ -5,9 +5,8 @@
 //  Created by Amit Jangirh on 15/05/21.
 //
 
-#include <stdio.h>
-#include "GambleGame.c"
-//#include "DynamicMemory.c"
+#include "DynamicMemory.h"
+#include "GambleGame.h"
 
 int main(int argc, const char * argv[]) {
     // 1. Dynamic Memory
