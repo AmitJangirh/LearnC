@@ -6,22 +6,28 @@
 //
 
 #include "GambleGame.h"
+#define INIT_CHAR(n)  (char*) malloc(n*sizeof(char))
 
 int cash = 1000; // Global mem
 
-void play(int bet) {
-    char *c = (char*) malloc(100*sizeof(char));
-    c[0] = 'J'; c[1] = 'Q'; c[2] = 'K';
+char* shuffleArray(char *array) {
     printf("Shuffle ...");
-    srand(time(NULL));          // Seeding random number generator
+    srand((unsigned int) time(NULL));          // Seeding random number generator
     int i;
-    for (i=0; i<5; i++) {
+    for(i = 0; i < 5; i++) {
         int x = rand() % 3;
         int y = rand() % 3;
-        int temp = c[x];
-        c[x] = c[y];
-        c[y] = temp;   // swaping char at poting x and y
+        int temp = array[x];
+        array[x] = array[y];
+        array[y] = temp;   // swaping char at positioning x and y
     }
+    return array;
+}
+
+void play(int bet) {
+    char *c = INIT_CHAR(100); // Dynamic allocation, stored in HEAP meme
+    c[0] = 'J'; c[1] = 'Q'; c[2] = 'K';     // initialise
+    c = shuffleArray(c);
     int playerGuess;
     printf("Whats your guess for Q's postion - 1,2, or 3");;
     scanf("%d", &playerGuess);
@@ -32,6 +38,7 @@ void play(int bet) {
         cash -= bet;
         printf("You loose! Result = \"%c, %c, %c\" with Total cash = %d\n", c[0], c[1], c[2], cash);
     }
+    free(c); // Freeing up as it would create mem leakes
 }
 
 // Main func

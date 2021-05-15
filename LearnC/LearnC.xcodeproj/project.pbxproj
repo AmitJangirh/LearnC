@@ -82,8 +82,8 @@
 		FD13A4182650267A00799443 /* GambleGame */ = {
 			isa = PBXGroup;
 			children = (
-				FD13A40A26501DFA00799443 /* GambleGame.c */,
 				FD13A412265025C300799443 /* GambleGame.h */,
+				FD13A40A26501DFA00799443 /* GambleGame.c */,
 			);
 			path = GambleGame;
 			sourceTree = "<group>";
